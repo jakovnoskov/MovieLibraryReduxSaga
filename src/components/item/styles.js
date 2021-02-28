@@ -1,13 +1,11 @@
 const styles = {
   listItem: {
-    //borderWidth: 1,
     height: 80,
     alignItems: 'center',
     flexDirection: 'row',
   },
 
   sideLeft: {
-    //borderWidth:1,
     flexDirection: 'column',
     flex: 1,
     paddingRight: '10%'
@@ -33,6 +31,7 @@ const styles = {
   },
 
   scoreBox: {
+    backgroundColor: '#6c3',
     marginRight: 20,
     width: 50,
     height: 50,

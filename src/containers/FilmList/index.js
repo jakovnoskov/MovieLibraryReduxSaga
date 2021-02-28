@@ -11,9 +11,7 @@ import Item from '../../components/item'
 
 import { loadData } from '../../redux/actions/films'
 
-
 const FilmList = () => {
-
     const menuData = useSelector((state) => state["films"].menuData)
     const [loading, setLoading] = useState(true)
     const dispatch = useDispatch()
@@ -22,9 +20,7 @@ const FilmList = () => {
         dispatch(loadData())
     }, [])
 
-
     useEffect(() => {
-        //console.log(menuData.length)
         if (menuData.length > 0) return setLoading(false)
     }, [menuData])
 
